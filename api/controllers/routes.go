@@ -1,6 +1,6 @@
 package controllers
 
-import "github.com/kirillMouraviev/api/middlewares"
+import "github.com/KirillMouraviev/TPOS-2020/api/middlewares"
 
 func (s *Server) initializeRoutes() {
 

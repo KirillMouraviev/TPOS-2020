@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/kirillMouraviev/TPOS-2020/api/auth"
-	"github.com/kirillMouraviev/TPOS-2020/api/responses"
+	"github.com/KirillMouraviev/TPOS-2020/api/auth"
+	"github.com/KirillMouraviev/TPOS-2020/api/responses"
 )
 
 func SetMiddlewareJSON(next http.HandlerFunc) http.HandlerFunc {

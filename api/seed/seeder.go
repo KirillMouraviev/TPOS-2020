@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/jinzhu/gorm"
-	"github.com/kirillMouraviev/TPOS-2020/api/models"
+	"github.com/KirillMouraviev/TPOS-2020/api/models"
 )
 
 var users = []models.User{

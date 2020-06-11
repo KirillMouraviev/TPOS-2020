@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/kirillMouraviev/TPOS-2020/api/controllers"
-	"github.com/kirillMouraviev/TPOS-2020/api/seed"
+	"github.com/KirillMouraviev/TPOS-2020/api/controllers"
+	"github.com/KirillMouraviev/TPOS-2020/api/seed"
 )
 
 var server = controllers.Server{}

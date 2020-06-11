@@ -9,10 +9,10 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/kirillMouraviev/TPOS-2020/api/auth"
-	"github.com/kirillMouraviev/TPOS-2020/api/models"
-	"github.com/kirillMouraviev/TPOS-2020/api/responses"
-	"github.com/kirillMouraviev/TPOS-2020/api/utils/formaterror"
+	"github.com/KirillMouraviev/TPOS-2020/api/auth"
+	"github.com/KirillMouraviev/TPOS-2020/api/models"
+	"github.com/KirillMouraviev/TPOS-2020/api/responses"
+	"github.com/KirillMouraviev/TPOS-2020/api/utils/formaterror"
 )
 
 func (server *Server) CreateUser(w http.ResponseWriter, r *http.Request) {
