@@ -3,6 +3,8 @@ package controllers
 import (
 	"fmt"
 	"log"
+	"os/exec"
+	"bytes"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -17,6 +19,16 @@ import (
 type Server struct {
 	DB     *gorm.DB
 	Router *mux.Router
+}
+
+func createPgDb() {
+    cmd := exec.Command("createdb", "-p", "5432", "-h", "127.0.0.1", "-U", "superuser", "-e", "test_db")
+    var out bytes.Buffer
+    cmd.Stdout = &out
+    if err := cmd.Run(); err != nil {
+        log.Printf("Error: %v", err)
+    }
+    log.Printf("Output: %q\n", out.String())
 }
 
 func (server *Server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, DbName string) {
@@ -37,6 +49,7 @@ func (server *Server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, D
 		DBURL := fmt.Sprintf("host=%s port=%s user=%s dbname=%s sslmode=disable password=%s", DbHost, DbPort, DbUser, DbName, DbPassword)
 		server.DB, err = gorm.Open(Dbdriver, DBURL)
 		if err != nil {
+			createPgDb()
 			fmt.Printf("Cannot connect to %s database", Dbdriver)
 			log.Fatal("This is the error:", err)
 		} else {
