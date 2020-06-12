@@ -1,3 +1,5 @@
+github.com/KirillMouraviev/TPOS-2020 v0.0.0-20200611083801-087af1a7496f h1:cOaIi3UAigsIZgbdx+cB3+uAIAdgN7Ap71SKfDIr7kA=
+github.com/KirillMouraviev/TPOS-2020 v0.0.0-20200611083801-087af1a7496f/go.mod h1:SrJCiaPvqRnvK6OdFgFMGUuZHLKqQVKx/JvevjDe3AA=
 github.com/badoux/checkmail v0.0.0-20181210160741-9661bd69e9ad h1:kXfVkP8xPSJXzicomzjECcw6tv1Wl9h1lNenWBfNKdg=
 github.com/badoux/checkmail v0.0.0-20181210160741-9661bd69e9ad/go.mod h1:r5ZalvRl3tXevRNJkwIB6DC4DD3DMjIlY9NEU1XGoaQ=
 github.com/denisenkom/go-mssqldb v0.0.0-20191124224453-732737034ffd/go.mod h1:xbL0rPBG9cCiLr28tMa8zpbdarY27NDyej4t/EjAShU=
